@@ -1,0 +1,1644 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Birtch Farms*/
+
+/* Global CSS Properties */
+
+/* CLEAR BROWSER DEFAULT PADDING AND MARGIN */
+
+* {
+	margin:0px;
+	padding:0px;
+	}
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #BA272E;
+	font-size: 13px;
+	color: #4EAB65;
+	line-height: 19px;
+	}
+	
+a:link,
+a:active,
+a:visited {
+	color: #BB0021;
+	text-decoration: underline;
+	}
+a:hover {
+	text-decoration: none;
+	color: #95001A;
+	}
+ul {
+	margin-left: 15px;
+	margin-bottom: 12px;
+}
+li {
+	margin-bottom:6px;
+}
+h4 { margin-bottom:8px }
+
+a img { border:none }
+
+img.alignright { 
+	float:right;
+	margin: 0 0 15px 15px;
+}
+
+img.alignleft { 
+	float:left;
+	margin: 0 15px 15px 0;
+}
+
+/* CSS Document */
+/* Birtch Farms Global CSS Properties */
+
+/* CLEAR DEFAULTS */
+
+		
+#mainwrapper {
+	width: 760px;
+	margin: 0px auto;
+	position:relative;
+	padding: 50px 70px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.59);
+	-moz-box-shadow:    0px 0px 11px rgba(0, 0, 0, 0.59);
+	box-shadow:         0px 0px 11px rgba(0, 0, 0, 0.59);
+	}
+
+#contentwrapper {
+	margin: 25px 0 10px 0;
+	}
+
+#footer {
+	text-align: center;
+	color: #97B99E;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	clear: both;
+	}
+#footer a {
+	color: #97B99E;
+	}
+	
+#middlecolumn {
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+	position:relative;
+	width:70%;
+	}
+
+#leftcolumn {
+	margin-right: 0px;
+	margin-left: 0px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	width:22%;
+	}
+	
+#rightcolumn {
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	margin-left: 20px;
+	margin-right: 0px;
+	position: relative;
+	width: 22%;
+	}
+
+p { margin-bottom: 12px; 	}
+
+p.intro {
+	line-height:18px;
+	}
+
+.mobile-menu-button {
+	display:none;
+}
+
+#logo {
+	display: block;
+	top: 0px;
+	left: 0px;
+	}
+#contactinfo img.hrs_btn {
+	margin-top: 5px;
+	text-align: right;
+	}
+	
+#headerimage {
+	background-repeat: no-repeat;
+	z-index: 1;
+	background-color: #000000;
+	position:relative;
+	height: 204px;
+	}
+img { border: none; }
+#contactinfo {
+	text-align: right;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 11px;
+	line-height: 14px;
+	}
+div.clear {
+	clear: both;
+	height: 0px;
+	width: 100%;
+	line-height: 0px;
+	}
+
+#tout_map {
+	background-image: url(images/bg_map.jpg);
+	background-repeat: no-repeat;
+	height: 172px;
+	position: relative;
+	margin-bottom: 12px;
+	}
+	
+#tout_gallery {
+	background-image: url(images/bg_gallerytout.jpg);
+	background-repeat: no-repeat;
+	background-position:0 30px;
+	height: 172px;
+	position: relative;
+	margin-bottom: 15px;
+	}
+	
+#tout_gallery img.btn {
+	position: absolute;
+	bottom: 0px;
+	visibility: visible;
+	z-index: 7;
+	}
+	
+#tout_map img.btn {
+	position: absolute;
+	bottom: 0px;
+	visibility: visible;
+	z-index: 7;
+	}
+
+
+	
+/*---------- NAVIGATION STYLES -------------*/
+#nav, #login_bar, #navBreadCrumb {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 600;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+#nav {
+	background-color: #30733D;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	clear: both;
+	position: relative;
+	z-index: 150;
+}
+#nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+#nav ul li ul li {
+	width:190px;
+	margin-right:5px;
+	}
+#nav ul li ul li.sub {
+	background-image:url(images/nav_arrow_right.gif);
+	background-position:right center;
+	background-repeat:no-repeat;
+	}
+#nav ul li a {
+	text-decoration:none;
+	padding: 0px 8px 0px 8px;
+	color:#FFFFFF;
+	height:21px;
+	}
+#nav ul li a:hover, #nav ul li a.sfhover, #nav ul li a:active {
+	color:#99FF00;;
+	}
+#nav ul li:hover, #nav ul li.sfhover {
+	background-color:#000000;
+	}
+#nav ul li:hover ul li, #nav ul li.sfhover ul li {
+	background-color:#000000;
+	}
+#nav ul li {
+	text-align:left;
+	background-color:#30733D;
+	line-height:25px;
+	float: left;
+	position: relative;
+	margin:0;
+	}
+#nav ul li.current-menu-item,
+#nav ul li.current-page-ancestor
+ {
+	background-image:url(images/nav_selected_arrow.gif);
+	background-position:center top;
+	background-repeat:no-repeat;
+	}
+#nav ul li ul {
+	background-color:#000000;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	}
+	
+#nav ul li ul li.current-menu-item {
+	background-image:none;
+	}
+	
+#nav ul li ul li.current-menu-item a {
+	color:#99FF00;
+}
+	
+#nav ul li:hover ul li ul, #nav ul li.sfhover ul li ul {
+	background-color:#000000;
+	display: none;
+	position: absolute; 
+	top: 0px;
+	left: 100%;
+	}
+#nav ul li:hover ul li:hover ul, #nav ul li.sfhover ul li.sfhover ul { display:block; }
+#nav ul li:hover ul, #nav ul li.sfhover ul { display: block; }
+#nav ul li ul li {
+	float:none;
+	}
+#nav ul li:hover ul li:hover a:hover, #nav ul li.sfhover ul li.sfhover a.sfhover {
+	color:#99FF00;
+	}
+
+/*-----------BOTTOM TOUTS ----------------*/
+#tout_wine {
+	float:left;
+	}
+#tout_pyoapples {
+	float: left;
+	width: 384px;
+	height:138px;
+	background-image: url(images/bg_tout_lg_pyoapples.jpg);
+}
+#tout_pyoapples p {
+	position: absolute;
+	top: 85px;
+	left: 16px;
+	width: 230px;
+	font-size: 11px;
+}
+#tout_gifts{
+	float:left;
+	}
+#tout_pyoapples img.btn {
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+}
+#tout_pyoapples h3 {
+	position: absolute;
+	left: 12px;
+	top: 36px;
+	color: #ffffff;
+	background: url(images/tout_pyoapples_lg_title.gif);
+	display: block;
+	height: 46px;
+	width: 167px;
+	text-indent: -9999px;
+	margin-bottom: 0px;
+}
+
+/*----------- HOMEPAGE SPECIFIC STYLES ----------------*/
+body.home #rightcolumn {
+	width: 20%;
+	}
+body.home #contentwrapper {
+	background-image: url(images/bg_3columnDivider.gif);
+	background-repeat: repeat-y;
+	background-position: top;
+	}
+body.home #middlecolumn {
+	width: 50%;
+	}
+body.home #leftcolumn, body.newsletter #leftcolumn {
+	width: 20%;
+	margin-right: 2%;
+	}
+body.home #headerimage {
+	background-image: url(images/home_header.jpg);
+	height: 310px;
+	}
+
+/*----------- SUBPAGE SPECIFIC STYLES -------------*/
+body.sub #whatshappening {
+	margin-top: 12px;
+}
+body.sub #leftcolumn {
+	width: 169px;
+	margin-right: 20px;
+	}
+body.sub #middlecolumn {
+	width: 550px;
+	margin-right: 0px;
+	}
+	
+#headerimage h1 {
+	position:absolute;
+	visibility: visible;
+	z-index: 25;
+	background: url(images/flag.png) right top;
+	left: -70px;
+	display: block;
+	top: 104px;
+	padding:13px 50px 15px 20px;
+	line-height:1;
+	
+}
+body.sub #contentwrapper {
+	background-image: url(images/bg_2columnDivider_sub.gif);
+	background-repeat: repeat-y;
+}
+
+/*----------- ABOUT SECTION SPECIFIC STYLES ------------*/
+body.page-about-us #headerimage,
+body.page-our-history #headerimage,
+body.page-our-mission-statement #headerimage,
+body.page-contact-us #headerimage,
+body.page-our-location #headerimage,
+body.page-farm-gallery #headerimage
+ {
+	background-image: url(images/about_header.jpg);
+}
+
+/*----------- HISTORY PAGE SPECIFIC STYLES -------------*/
+
+	
+/*----------- FAMILY PAGE SPECIFIC STYLES -------------*/
+body.page-our-family #headerimage {background-image: url(images/family_header.jpg);}
+
+/*----------- MISSION PAGE SPECIFIC STYLES -------------*/
+
+	
+/*----------- LOCATION PAGE SPECIFIC STYLES -------------*/
+
+
+/*----------- CONTACT PAGE SPECIFIC STYLES --------------*/
+
+
+/*----------- PHOTO GALLERY SPECIFIC STYLES ---------------*/
+
+
+/*----------- NEWS PAGE SPECIFIC STYLES --------------*/
+
+	
+/*----------- NEWSLETTER -------------*/
+
+
+/*----------- OUR PRODCTS ----------*/
+body.page-our-products #headerimage {
+	background-image: url(images/ourproducts_header.jpg);
+}
+ul#productsgroup { margin:0 }
+ul#productsgroup li {
+	list-style-type:none;
+	float:left;
+	margin-bottom: 8px;
+}
+ul#productsgroup.tours li a { 
+	width:200px; 
+	padding:0;	
+	font: bold 15px/18px Arial, Helvetica, sans-serif;
+}
+ul#productsgroup li a {
+	width: 165px;
+	vertical-align:middle;
+	display: block;
+	padding-left: 105px;
+	font: bold 15px/16px Arial, Helvetica, sans-serif;
+	height: 45px;
+	padding-top: 20px;
+}
+ul#productsgroup li.apples a { background: url(images/products_thumb_apples.jpg) no-repeat; }
+ul#productsgroup li.pumpkins a { background: url(images/products_thumb_pumpkins.jpg) no-repeat; }
+ul#productsgroup li.decoratingcrops a { background: url(images/products_thumb_decorcrops.jpg) no-repeat; }
+ul#productsgroup li.wine a { background: url(images/products_thumb_wine.jpg) no-repeat;  }
+ul#productsgroup li.giftbaskets a { background: url(images/products_thumb_gifts.jpg) no-repeat; }
+ul#productsgroup li.bakery a { background: url(images/products_thumb_baking.jpg) no-repeat; }
+ul#productsgroup li.applepicking a { background: url(images/activities_thumb_applepicking.jpg) no-repeat; }
+ul#productsgroup li.pumpkinpicking a { background: url(images/activities_thumb_pumpkinpick.jpg) no-repeat; }
+ul#productsgroup li.playarea a { background: url(images/activities_thumb_playarea.jpg) no-repeat;  }
+ul#productsgroup li.appletaletrail a { background: url(images/activities_thumb_appletale.jpg) no-repeat; }
+ul#productsgroup li.scarecrow a { background: url(images/activities_thumb_scarecrow.jpg) no-repeat; }
+ul#productsgroup li.farmerbob a { background: url(images/activities_thumb_farmerbob.jpg) no-repeat; }
+
+/*----------- APPLES PAGE SPECIFIC STYLES --------------*/
+body.page-apples #headerimage {
+	background-image: url(images/apples_header.jpg);
+}
+table#applechart thead td {
+	background-color: #BA272E;
+	color: #FFFFFF;
+	font-weight: bold;
+	}
+table#applechart td {
+	padding:4px;
+	border-bottom:solid 1px #ccc;
+	}
+
+table#applechart .selected td {
+		border-bottom: none;
+		}
+
+
+table#applechart thead td a {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+	
+.chart_apple { 
+	display: inline-block;
+	background:url(images/apples_chartapple.jpg) no-repeat;
+	width:13px;
+	height:15px;
+	text-indent:-9999px;
+}
+/*-- sortable classes --*/
+.alternate { background-color:#EEEEEE; }
+
+.table-sorted-asc {
+	background-image:url(images/apples_chartarrowup.gif);
+	background-position:4px 0px;
+	background-repeat:no-repeat;
+}
+.table-sorted-desc {
+	background-image:url(images/apples_chartarrowdown.gif);
+	background-position:4px 0px;
+	background-repeat:no-repeat;
+}
+
+body.page-apples div.apple {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	line-height: 17px;
+	height: 120px;
+	position: absolute;
+	top: 0px;
+	background-repeat:no-repeat;
+	left: 0px;
+	width: 169px;
+	z-index: 1;
+}
+img.appleimg {
+	margin-bottom:15px;
+	clear:both;
+	width: 169px;
+}
+
+/*----------- PUMPKIN PAGE SPECIFIC STYLES --------------*/
+body.page-pumpkins #headerimage {
+	background-image: url(images/pumpkins_header.jpg);
+}
+
+/*----------- FALL DECORATIVE CROPS PAGE SPECIFIC STYLES --------------*/
+body.page-fall-decorating-crops #headerimage {
+	background-image: url(images/decorcrops_header.jpg);
+}
+	
+/*----------- GIFT BASKETS PAGE SPECIFIC STYLES --------------*/
+body.page-gift-baskets #headerimage {
+	background-image: url(images/giftbaskets_header.jpg);
+}	
+
+/*----------- WINE PAGE SPECIFIC STYLES ----------------*/
+.wine-list-item-more {
+}
+
+#wine-list { list-style-type: none; margin:0; padding:0}
+#wine-list li { margin:0 0 5px 0; padding:0; clear:both; }
+#wine-list li img { margin-right:-100px}
+#wine-list li h3 { padding-top:50px}
+
+
+body.page-wine #headerimage {
+	background-image: url(images/wine_header.jpg);
+}
+
+body.wine #rightcolumn {
+	width: 169px;
+	}
+body.wine #contentwrapper {
+	background-image: url(images/bg_3columnDivider.gif);
+	background-repeat: repeat-y;
+	background-position: top;
+	}
+body.wine #middlecolumn {
+	width: 332px;
+	padding-left: 10px;
+	}
+body.wine ul.list {
+	float: left;
+	width: 100%;
+	margin-left: 0px;
+	list-style-type: none;
+	height: 250px;
+	overflow: auto;
+}
+body.wine ul.list li {
+	line-height: 18px;
+	background-image: url(images/bullet_redarrow.gif);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	padding-left: 6px;
+}
+body.wine div.wine {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	line-height: 17px;
+	height: 120px;
+	position: absolute;
+	top: 0px;
+	background-repeat:no-repeat;
+	padding: 185px 0px 0px 100px;
+	left: 0px;
+	width: 243px;
+	z-index: 1;
+}
+
+body.wine #wine_oakagedmacintosh {
+	background-image: url(images/wine_oakagedmac.jpg);
+}
+body.wine #wine_orchardgold {
+	background-image: url(images/wine_orchardgold.jpg);
+}
+body.wine #wine_northernspy {
+	background-image: url(images/wine_northernspy.jpg);
+}
+body.wine #wine_royalgalablush {
+	background-image: url(images/wine_royalgalablush.jpg);
+}
+body.wine #wine_blackcurrantapple {
+	background-image: url(images/wine_blackcurrentapple.jpg);
+}
+body.wine #wine_blueberry {
+	background-image: url(images/wine_blueberry.jpg);
+}
+body.wine #wine_cranberry {
+	background-image: url(images/wine_cranberry.jpg);
+}
+body.wine #wine_montmorencycherry {
+	background-image: url(images/wine_montmorrencycherry.jpg);
+}
+body.wine #wine_elderberry {
+	background-image: url(images/wine_elderberry.jpg);
+}
+body.wine #wine_kiwistrawberry {
+	background-image: url(images/wine_kiwistrawberry.jpg);
+}
+body.wine #wine_peachsemisweet {
+	background-image: url(images/wine_peach.jpg);
+}
+body.wine #wine_pear {
+	background-image: url(images/wine_pear.jpg);
+}
+body.wine #wine_plum {
+	background-image: url(images/wine_plum.jpg);
+}
+body.wine #wine_raspberrydry {
+	background-image: url(images/wine_raspberry.jpg);
+}
+body.wine #wine_raspberrysemisweet {
+	background-image: url(images/wine_raspberrysemisweet.jpg);
+}
+body.wine #wine_rhubarb {
+	background-image: url(images/wine_rhubarb.jpg);
+}
+body.wine #wine_rhubarbstrawberry {
+	background-image: url(images/wine_rhubarbstrawberry.jpg);
+}
+body.wine #wine_strawberrydry {
+	background-image: url(images/wine_strawberry.jpg);
+}
+body.wine #wine_strawberrysemisweet {
+	background-image: url(images/wine_strawberrysemisweet.jpg);
+}
+body.wine #wine_appleice {
+	background-image: url(images/wine_appleice.jpg);
+}
+body.wine #wine_applemapleice {
+	background-image: url(images/wine_applemapleice.jpg);
+}
+body.wine #wine_blueberryice {
+	background-image: url(images/wine_blueberryice.jpg);
+}
+body.wine #wine_cherryice {
+	background-image: url(images/wine_cherryice.jpg);
+}
+body.wine #wine_raspberryice {
+	background-image: url(images/wine_raspberryice.jpg);
+}
+body.wine #wine_strawberryice {
+	background-image: url(images/wine_strawberryice.jpg);
+}
+body.wine #wine_applesnspice {
+	background-image: url(images/wine_applesnspice.jpg);
+}
+body.wine div.wine h4 {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	background-image: url(images/bullet_redarrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0px;
+	left: -5px;
+	padding-left: 8px;
+	position: relative;
+}
+body.wine #contentwrapper {
+	background-image: url(images/bg_3columnDivider.gif);
+	background-repeat: repeat-y;
+}
+body.wine ul.list li.subtitle {
+	background-image: none;
+	margin-top: 12px;
+	padding-left: 0px;
+}
+body.wine #middlecolumn h4 {
+	margin-bottom: 8px;
+	
+}
+body.wine #middlecolumn div.intro {
+	height: 165px;
+	margin-bottom: 20px;
+	z-index: 100;
+	margin-left: 100px;
+	position: absolute;
+	margin-right: 20px;
+	width: 243px;
+	left: 0px;
+}
+body.wine ul.buttons {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0px;
+}
+body.wine ul.buttons li { margin-bottom: 6px; }
+
+/*----------- BAKERY PAGE SPECIFIC STYLES --------------*/
+body.page-bakery #headerimage {
+	background-image: url(images/bakery_header.jpg);
+}
+
+/*----------- EVENTS PAGE SPECIFIC STYLES --------------*/
+body.page-events #headerimage { background: url(images/events_header.jpg); }
+
+/*----APPLE FEST----*/
+body.page-apple-festival #headerimage { background: url(images/applefest_header.jpg); }
+
+/*----FALL SEASON -----*/
+body.page-fall-season #headerimage { background: url(images/fallseason_header.jpg); }
+
+/*----FOOD AND WINE FEST ----*/
+body.page-food-wine-festival #headerimage {background-image: url(images/wine_header.jpg);}
+
+/*----PUMPKIN FEST----*/
+body.page-pumpkin-festival #headerimage { background: url(images/pumpkinfest_header.jpg); }
+
+/*----ACTIVITIES -----*/
+body.page-activities #headerimage { background: url(images/activities_header.jpg); }
+
+/*----APPLE PICKING -----*/
+body.page-apple-picking #headerimage { background: url(images/applepicking_header.jpg); }
+
+/*----PUMPKIN PICKING -----*/
+body.page-pumpkin-picking #headerimage { background: url(images/fallseason_header.jpg); }
+
+/*----PLAY AREA -----*/
+body.page-playarea #headerimage { background: url(images/playarea_header.jpg); }
+
+/*----APPLE TALE TRAIL -----*/
+body.page-apple-tale-trail #headerimage { background: url(images/appletaletrail_header.jpg); }
+
+/*----SCARECROW -----*/
+body.page-make-a-scarecrow #headerimage { background: url(images/scarecrow_header.jpg); }
+
+/*----FARMER BOBS ADVENTURE----------*/
+body.page-farmer-bobs-adventure #headerimage { background: url(images/activities_header.jpg); }
+
+/*----TOURS -----*/
+body.page-tours #headerimage,
+body.page-custom-tours #headerimage,
+body.page-corporate-events #headerimage,
+body.page-employment #headerimage
+ { background: url(images/tours_header.jpg); }
+
+/*----SCHOOL TOURS -----*/
+body.page-school-tours #headerimage { background: url(images/schooltours_header.jpg); }
+
+/*----MOTORCOACH TOURS -----*/
+body.page-motorcoach-tours #headerimage { background: url(images/motorcoachtours_header.jpg); }
+
+/*----CUSTOM TOURS-----*/
+
+/*----CORPORATE EVENTS-----*/
+
+/*----------- JOBS SECTION SPECIFIC STYLES ------------*/
+body.jobs #headerimage {
+	background-image: url(images/tours_header.jpg);
+}
+
+body.jobs #middlecolumn { width: 342px; }
+body.jobs #contentwrapper {
+	background-image: url(images/bg_3columnDivider.gif);
+	background-repeat: repeat-y;
+	background-position: top;
+	}
+/*----LOCAL ATTRACTIONS -----*/
+
+/*----ACCOMODATIONS------*/
+
+/*----------------HEADER STYLES-------------------*/
+h1 {
+	font-family: "acta-display", georgia, serif;
+	font-weight: normal;
+	font-size: 36px;
+	color: #FFFFFF;
+	line-height: 32px;
+	background-repeat: no-repeat;
+	}
+h2 {
+	font-size: 28px;
+	font-family:"acta-display", georgia, serif;
+	font-weight:400;
+	font-style: italic;
+	color: #30733D;
+	line-height: 29px;
+	margin-bottom: 20px;
+	}
+h3 {
+	/*THIS HEADER IS USED FOR SIDEBAR TOUTS*/
+	color: #BA272E;
+	margin-bottom: 14px;
+	font: bold 17px/18px Arial, Helvetica, sans-serif;
+	}
+h3 a:link {
+	text-decoration:none;
+	}
+h3 a:link {
+	color: #BB0021;
+	text-decoration: none;
+	}
+h3 a:visited {
+	text-decoration: none;
+	color: #BB0021;
+	}
+h3 a:hover {
+	text-decoration: underline;
+	color: #BB0021;
+	}
+	
+h3 a:active {
+	text-decoration: none;
+	
+	}
+	
+h4 {
+	font-size: 16px;
+	font-family: "acta-display", Georgia, serif;
+	font-weight:bold;
+	font-style: italic;
+	margin-bottom: 6px;
+	}
+	
+#footer ul {
+	list-style-type: none;
+}
+#footer ul li {
+	padding-left: 8px;
+	padding-right: 8px;
+	display: inline;
+	border-left: solid 1px;
+}
+#footer ul li.first { border:none; }
+
+.clearBoth {
+	clear: both;
+}
+#tout_wine {
+	background-image: url(images/bg_tout_sm_wine.jpg);
+	position: relative;
+	background-repeat: repeat-x;
+	width: 188px;
+	height: 138px;
+	}
+
+#tout_gifts {
+	background-image: url(images/bg_tout_sm_gifts.jpg);
+	position: relative;
+	background-repeat: repeat-x;
+	width: 186px;
+	height: 138px;
+	color: #FFFFFF;
+	}
+
+
+#bottomtouts {
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	display: block;
+	height: 138px;
+	line-height: 13px;
+}
+
+#tout_wine h3 {
+	position: absolute;
+	left: 10px;
+	top: 36px;
+	color: #ffffff;
+	width: 90px;
+	height: 46px;
+	background: url(images/tout_wine_title.gif) no-repeat 0px 0px;
+	text-indent: -9999px;
+	display: block;
+	margin-bottom: 0px;
+}
+#tout_wine img.btn {
+	position: absolute;
+	bottom: 0px;
+	left: 14px;
+}
+#tout_wine p {
+	position: absolute;
+	left: 15px;
+	top: 85px;
+	width: 90px;
+	font-size: 11px;
+}
+#tout_pyoapples {
+	color:#FFFFFF;
+	position: relative;
+}
+#tout_gifts h3 {
+	position: absolute;
+	left: 10px;
+	top: 36px;
+	visibility: visible;
+	z-index: 1;
+	color: #FFFFFF;
+	background: url(images/tout_gifts_title.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 46px;
+	width: 119px;
+	margin-bottom: 0px;
+}
+#tout_gifts img.btn {
+	position: absolute;
+	bottom: 0px;
+	right: 15px;
+	visibility: visible;
+	z-index: 3;
+}
+#tout_gifts p {
+	position: absolute;
+	top: 84px;
+	left: 16px;
+	width: 110px;
+	visibility: visible;
+	z-index: 2;
+	font-size: 11px;
+}
+#header {
+	display: block;
+	clear: both;
+	position: relative;
+	height: 60px;
+	margin-bottom: 20px;
+}
+p span.dropcap {
+	float: left;
+	top: 3px;
+	position: relative;
+	left: -3px;
+}
+img.placeholder{
+	background-color:#CCCCCC;
+	border: solid 1px #cccccc;
+	}
+	
+form label {
+	display: inline-block;
+	margin-right:10px;
+	width: 80px;
+}
+form input {
+	display: inline;
+	margin-bottom: 4px;
+	border: solid 1px #AAAAAA;
+	line-height: 16px;
+	font-size: 11px;
+	color: #555555;
+	padding:3px;
+	vertical-align: middle;
+}
+
+input[type="radio"] {
+	height:25px
+}
+
+form.wpcf7-form  input {
+		width: 235px;
+		height: 17px;
+}
+
+form br { clear: both; }
+form.wpcf7-form  textarea {
+	display: block;
+	width: 100%;
+	margin-top: 4px;
+	border: 1px solid #AAAAAA;
+	padding: 10px;
+}
+.wpcf7-form .wpcf7-submit {
+	width: auto;
+	padding:10px;
+	font-size: 110%;
+	cursor: pointer;
+	background: #F3D639;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	height: auto;
+	border: solid 1px #F3D639;	
+}
+.wpcf7-form .wpcf7-submit:hover {
+	background: #fff;
+}
+
+#nav #search {
+	float:right;
+}
+
+#nav #searchform input[type="text"]{
+	border-radius: 10px;
+	padding:2px 6px;
+	font-size:.9em;
+	line-height:1;
+	margin:4px;
+}
+
+#searchform .submit {
+	display:none;
+}
+
+/* TOUTS */
+
+#tout_video a{
+	background: url(images/video.png) no-repeat 0px 20px;
+	width:169px;
+	height:120px;
+	display:block;
+	margin-bottom:20px;
+}
+
+
+/* BUTTONS -------------------------*/
+a.button,
+a.button:link,
+a.button:visited {
+	background: no-repeat 0px 0px;
+	height: 20px;
+	display: block;
+	text-indent: -9999px;
+}
+a.button:hover { background: no-repeat 0px -20px; }
+/* SUBMIT BUTON */
+form#contact_form a.button,
+form#contact_form a.button:link,
+form#contact_form a.button:visited,
+form#subscribe_form a.button,
+form#subscribe_form a.button:link,
+form#subscribe_form a.button:visited
+ {
+	background: url(images/contact_submit.gif) no-repeat 0px 0px;
+	height: 20px;
+	display: block;
+	text-indent: -9999px;
+	cursor: pointer;
+	width: 67px;
+	margin-top: 12px;
+	margin-bottom: 0px;
+}
+form#contact_form a.button:hover ,form#subscribe_form a.button:hover { background: url(images/contact_submit.gif) no-repeat 0px -20px; }
+/* MAP BUTTON */
+#tout_map a.button,
+#tout_map a.button:link,
+#tout_map a.button:visited {
+	background: url(images/map_btn.gif);
+	width: 96px;
+	position: absolute;
+	bottom: 0px;
+}
+#tout_map a.button:hover { background: url(images/map_btn.gif) no-repeat 0px -20px; }
+/* GALLERY BUTTON */
+#tout_gallery a.button,
+#tout_gallery a.button:link,
+#tout_gallery a.button:visited {
+	background: url(images/gallery_btn.gif);
+	width: 117px;
+	position: absolute;
+	bottom: 0px;
+}
+#tout_gallery a.button:hover { background: url(images/gallery_btn.gif) no-repeat 0px -20px; }
+/* CONTACT BUTTON */
+#tout_contact a.button,
+#tout_contact a.button:link,
+#tout_contact a.button:visited {
+	background: url(images/contact_btn.gif) no-repeat 0px 0px;
+	height:21px;
+	width: 117px;
+}
+#tout_contact a.button:hover { background: url(images/contact_btn.gif) no-repeat 0px -21px; }
+/* LEARN MORE BUTTON (AT BOTTOM OF PAGE) */
+#bottomtouts a.button,
+#bottomtouts a.button:link,
+#bottomtouts a.button:visited {
+	background: url(images/tout_wine_btn.gif) no-repeat;
+	width: 101px;
+	position: absolute;
+	height: 18px;
+	bottom: 0px;
+	left: 15px;
+}
+#bottomtouts a.button:hover { background: url(images/tout_wine_btn.gif) no-repeat 0px -18px; }
+/* LEARN MORE BUTON FOR APPLES TOUT */
+#bottomtouts #tout_pyoapples a.button,
+#bottomtouts #tout_pyoapples a.button:link,
+#bottomtouts #tout_pyoapples a.button:visited {
+	left:auto;
+	right: 15px;
+}
+/* RSS BUTTON */
+#tout_rss a.button,
+#tout_rss a.button:link,
+#tout_rss a.button:visited {
+	background: url(images/subscribe_btn.gif);
+	width: 80px;
+}
+#tout_rss a.button:hover { background: url(images/subscribe_btn.gif) no-repeat 0px -20px; }
+/* EVENTS BUTTON */
+#tout_events a.button,
+#tout_events a.button:link,
+#tout_events a.button:visited {
+	background: url(images/events_btn.gif);
+	width: 94px;
+}
+#tout_events a.button:hover { background: url(images/events_btn.gif) no-repeat 0px -20px; }
+/* VIEW HOURS BUTTON */
+#contactinfo a.button,
+#contactinfo a.button:link,
+#contactinfo a.button:visited {
+	background: url(images/btn_viewHours.gif) 0px 0px;
+	width: 72px;
+	height:9px;
+	top: 52px;
+	right: 0px;
+	position: absolute;
+	text-align: left;
+	line-height: 9px;
+}
+#contactinfo a.button:hover { background: url(images/btn_viewHours.gif) no-repeat 0px -9px; }
+/* WINE ORDER FORM BUTTON*/
+li.orderform a.button,
+li.orderform a.button:link,
+li.orderform a.button:visited {
+	background: url(images/win_btn_order.gif);
+	height:23px
+}
+li.orderform a.button:hover { background: url(images/win_btn_order.gif) no-repeat 0px -23px; }
+/* WINE LIST BUTTON*/
+li.winelist a.button,
+li.winelist a.button:link,
+li.winelist a.button:visited {
+	background: url(images/wine_button_list.gif);
+	height:23px
+}
+li.winelist a.button:hover { background: url(images/wine_button_list.gif) no-repeat 0px -23px; }
+
+body.home #headerimage h1 {
+	background: url(images/home_h1.jpg) no-repeat 0px 0px;
+	display: block;
+	text-indent: -9999px;
+	height: 178px;
+	width: 367px;
+	left:0;
+	top:0;
+}
+#logo a {
+	background: url(images/logo.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 60px;
+	width: 146px;
+}
+
+#tout_rss h3 { }
+
+.thumb {
+	float: left;
+	margin-bottom: 7px;
+	margin-left: 7px;
+	width: 58px;
+	height: 58px;
+	background: #CCCCCC;
+}
+
+body.gallery #leftcolumn {
+	width: 550px;
+	margin-right: 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body.gallery #middlecolumn {
+	margin-left: 14px;
+	width: 196px;
+}
+
+#middlecolumn.narrow {
+	width: 45%;
+}
+
+h2.aGlimpse {
+	background: url(images/gallery_h2.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 25px;
+	width: 287px;
+}
+
+body.gallery #contentwrapper { background: url(none); }
+
+#gallery_large { float: left; }
+
+#gallery_thumbs {
+	float: left;
+	width: 196px;
+	margin-left: 14px;
+}
+
+#gallery {
+	clear: both;
+	padding-top: 20px;
+}
+
+.disclaimer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #99b49d;
+	line-height: 14px;
+	margin-top: 32px;
+}
+
+ul#giftbaskets_list {
+	float: left;
+	list-style: none;
+	width: 155px;
+	display: block;
+	position: relative;
+	margin-right: 12px;
+	margin-left: 0px;
+}
+
+#giftbaskets_item {
+	float: left;
+	position: relative;
+	width: 365px;
+	
+}
+
+#giftbaskets_item .giftbasket {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#giftbaskets_item div.giftbasket p {
+	font-style:italic;
+}
+
+#giftbaskets_item div.giftbasket p.price {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:normal;
+}
+
+#giftbaskets_item div.giftbasket h3 {
+	font-style: italic;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+#giftbaskets { clear: both; margin-bottom: 32px;
+}
+ul#subnav, 
+ul#recent_posts,
+ul#archives {
+	margin-left: 0px;
+	margin-bottom: 15px;
+	padding-bottom: 12px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #9FBEA5;
+	padding-left: 0px;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	list-style-type: none;
+	line-height:1.3;
+}
+ul#subnav li,
+ul#recent_posts li,
+ul#archives li  {
+	padding-bottom: 3px;
+	margin:0;
+}
+body.history #middlecolumn, 
+body.ourfamily #middlecolumn, 
+body.mission #middlecolumn, 
+body.location #middlecolumn, 
+body.jobs #middlecolumn  { width: 551px; }
+#tout_hours {
+	font-size: 11px;
+	line-height: 14px;
+}
+
+/*********** SUBNAV *********/
+ul#subnav li a,
+ul#recent_posts li a,
+ul#archives a {
+	text-decoration: none;
+	background-image: url(images/bullet_greenarrow.png);
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	display: block;
+	background-position: 0px -2px;
+}
+
+ul#subnav li a:hover,
+ul#recent_posts li a:hover,
+ul#archives a:hover {
+	text-decoration: none;
+	color:#000000;
+}
+
+/********* ABOUT SUBNAV ********/
+ul#subnav li.current_page_item a {
+	color:#000000;
+	background-color: #F3D639;
+}
+.floatLeft {
+	float: left;
+}
+div.missionpara {
+	float: left;
+	width: 263px;
+	margin-right: 20px;
+	margin-bottom: 12px;
+}
+
+#middlecolumn #tout_map {
+	background: none;
+	height:0;
+	margin-bottom: 24px;
+}
+
+#apples_wrapper { position: relative; }
+
+
+
+form { border-style: none; }
+label { font-family: arial; font-size: 10px}
+
+#subscribe_form label {
+	width: 100px;
+	display: block;
+	float: left;
+}
+
+form input, form select { margin-bottom: 4px; }
+
+h2.keepup {
+	background: url(images/newsletter_h2.gif) no-repeat;
+	height: 24px;
+	width: 341px;
+	text-indent: -9999px;
+	display: block;
+}
+
+a.download_newsletter {
+	background: url(images/newsletter_page.jpg);
+	height: 326px;
+	width: 330px;
+	text-indent: -9999px;
+	display: block;
+	margin-top: 10px;
+}
+
+form#subscribe_form input, form#subscribe_form select { width: 97% }
+
+#subscribe_tout {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: solid 1px #CCCCCC;
+}
+
+body.history #contentwrapper,
+body.ourfamily #contentwrapper,
+body.mission #contentwrapper,
+body.location #contentwrapper,
+body.jobs #contentwrapper { background: url(images/bg_2columnDivider_sub.gif); }
+
+h2.nestled {
+	background: url(images/location_h2.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 505px;
+	height: 25px;
+}
+
+#gallery_thumbs a img{
+	border: 2px solid #FFFFFF;
+	width: 58px;
+	height: 58px;
+}
+
+#gallery_thumbs a:hover img, #gallery_thumbs img.selected{ border: 2px solid #30733E; }
+
+body.gallery #rightcolumn {
+	width: 189px;
+	margin: 0;
+}
+
+body.aboutus #middlecolumn #tout_map h3 {
+	background: url(images/aboutus_h2_where.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 18px;
+	width: 252px;
+}
+
+body.aboutus #middlecolumn #tout_events h3 {
+	background: url(images/aboutus_h2_whathappening.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 22px;
+	width: 252px;
+}
+
+h2.questions {
+	background: url(images/contact_h2.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	height: 25px;
+	width: 179px;
+}
+
+a.emailorder_btn {
+	text-indent: -9999px;
+	display: block;
+	height: 20px;
+	width: 154px;
+	background: url(images/emailorder_btn.gif) 0px 0px;
+}
+
+a.emailorder_btn:hover { background: url(images/emailorder_btn.gif) 0px -20px; }
+
+table#awardschart { font-family: Arial, Helvetica, sans-serif; }
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 1px solid #CCCCCC;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 100%;
+}
+
+/******** BLOG ***********/
+
+h2.blog {
+	background: url(images/corporateevents_h2.gif) no-repeat 0px 0px;
+	text-indent: -9999px;
+	display: block;
+	width: 500px;
+	height: 50px;
+}
+
+.blog-back { margin-bottom:20px; display:block}
+
+body #headerimage { background: url(images/news_header.jpg); }
+
+ul#recent_posts li,
+ul#archives li { margin-bottom: 8px}
+
+.post-category, .post-date { font-size:.8em; font-family:arial, sans-serif }
+.post-category { margin-bottom:4px; position: absolute; right:0; top:0}
+.post-category a { border: solid 1px #ccc; padding:3px 3px; display:inline-block; text-decoration:none; line-height:1}
+.post-category a:hover { background: #eee}
+.post-header { margin-bottom: 20px}
+h2.post-title { margin-top:0; margin-bottom: 0; width:90%}
+.post { margin-bottom: 25px; border-bottom: 1px dotted #ccc; padding-bottom: 0px; position:relative}
+.post-content { margin-bottom:30px}
+
+/*COMMENTS*/
+#comments #submit { float:none; }
+.comment { background: #f3f3f3; color:#888; margin-bottom:10px; padding:10px; border: 1px solid #ccc; line-height:1.4; font-family: arial, sans-serif; font-size: .85em}
+/*.comment-form-comment label { display:block}
+*/.comment-form-comment textarea { width: 100%}
+.comment .fn { font-weight:bold; font-size:1.1em}
+.commentlist { list-style-type:none}
+.comment-info { float:left; width:150px; font-style:normal }
+.comment-body {float:left; width: 350px;}
+
+
+/* TWEETS */
+.twitter_button {
+	margin-top:12px;
+	text-indent:-9999px;
+	display:block;
+	background:url(images/twitter_btn.gif) no-repeat;
+	width:167px;
+	height:25px;
+}
+.twitter_button:hover {
+	background-position:0 -25px;
+}
+.twitter_container{
+	font-size:10px;
+	line-height:1.4;
+	margin: 0 auto;
+}
+.twitter_container a{
+	font-weight:bold;
+}
+.twitter_status{
+	padding:8px 0;
+	border-bottom:solid 1px #DEDEDE;
+}
+
+.twitter_status a {
+	font-weight:normal;
+}
+
+.twitter_posted_at{
+ font-size:10px;
+ padding-top:4px;
+ color:#9a9a9a;
+}
+
+.popup {
+	width:600px;
+	position:absolute;
+	top:200px;
+	left:96px;
+	z-index:99;
+	border: solid 1px #333;
+	-moz-box-shadow: 4px 4px 30px #000; /* Firefox */
+  -webkit-box-shadow: 4px 4px 30px #000; /* Safari, Chrome */
+  box-shadow: 4px 4px 30px #000; /* CSS3 */
+	height:615px;
+
+}
+a.close_btn {
+	color: #FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	position:absolute;
+	right:15px;
+	top:!5px;
+	z-index:100;
+	top: 10px;
+}
+
+/*================== MEDIA QUERIES ===================*/
+/* #Media Queries
+
+================================================== */
+
+/* larger than 1680 screens */
+
+@media screen and (min-width: 1280px) {
+	#mainwrapper {width: 1000px;}
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+
+@media screen and (max-width: 959px) {
+	#mainwrapper { 
+		width: 80%;
+		padding:4%;
+	}
+	body.home #middlecolumn {
+		width:40%;
+	}
+	body.home #rightcolumn {
+		width:20%;
+	}
+	body.home #leftcolumn {
+		width:10%;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	body.home #middlecolumn { 
+		width:70%;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+
+@media screen and (max-width: 767px) {
+	#headerimage .mainheading { left:0; top:80px; font-size: 2em;}
+	#nav { 
+		position: absolute;
+		top:91px;
+		z-index: 999;
+		display: none;
+		width: 92.2222222%;
+		margin:0;
+		height:auto;
+	}
+	#nav #search {float:none; padding:3px; border-bottom: dotted 1px #797}
+	#nav #searchform input[type="text"] { 
+		font-size: 1.3em;
+		width: 90%;
+	}
+	#nav ul li {
+		width:100%;
+		float: none;
+		display: block;
+		border-bottom: dotted 1px #797;
+
+	}
+	
+	#nav ul li.current-menu-item { display: none;} 
+	#nav ul li a { 
+		font-size: 1.4em;
+		line-height: 35px;
+		vertical-align: middle;
+		height:35px;
+		display: block;
+		text-align: center;
+	}
+
+	#nav ul li:hover ul, #nav ul li.sfhover ul {
+		display: none;
+	}
+	
+	
+	
+	.mobile-menu-button {
+		display:block;
+		position:absolute;
+		top:0px;
+		right:0px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		border: solid 1px #ccc;
+		padding:5px 7px 7px 7px;
+		line-height: 1;
+		font-size: 1.3em;
+		cursor: pointer;
+	}
+	#contactinfo { display:none; }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media screen and (max-width: 479px) {
+	body { font-size: 14px; line-height: 1.5}
+	#mainwrapper { width:88% }
+	body.home #headerimage { overflow-y: hidden  }
+	#header { margin-bottom: 15px;}
+	#headerimage { height: 165px; overflow: hidden  }
+	body.home #middlecolumn, #middlecolumn, body.home #leftcolumn, #leftcolumn, body.home #rightcolumn, #rightcolumn  { width:100%; margin:0 }
+}
+	
+}
